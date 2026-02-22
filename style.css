@@ -175,9 +175,16 @@ p {
 
 .calculator-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
     margin-top: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .calculator-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -710,5 +717,84 @@ footer {
     
     .explanation {
         grid-template-columns: 1fr;
+    }
+}
+
+/* AdSense Container Styles */
+.adsense-container {
+    margin: 2rem 0;
+    text-align: center;
+    border: 2px dashed #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+}
+
+.adsense-hero {
+    margin: 2rem auto;
+    max-width: 728px;
+}
+
+.adsense-sidebar {
+    width: 300px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.adsense-below-results {
+    margin: 3rem auto 0;
+    max-width: 728px;
+}
+
+.ad-placeholder {
+    color: #6b7280;
+    font-family: monospace;
+}
+
+.ad-placeholder p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.ad-placeholder small {
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+/* Responsive adjustments for ads */
+@media (max-width: 1024px) {
+    .adsense-sidebar {
+        grid-column: span 2;
+        width: 100%;
+        max-width: 336px;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .adsense-container {
+        margin: 1.5rem 0;
+        padding: 1rem;
+    }
+    
+    .adsense-sidebar {
+        grid-column: span 1;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .adsense-container {
+        margin: 1rem 0;
+        padding: 0.75rem;
+    }
+    
+    .ad-placeholder p {
+        font-size: 1rem;
     }
 }

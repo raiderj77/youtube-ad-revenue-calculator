@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Ad Revenue Calculator 2024 | How Much Do YouTubers Make Per View</title>
+    <meta name="description" content="Free YouTube ad revenue calculator. Calculate how much money YouTubers make per view, per 1,000 views (CPM). Estimate earnings based on niche, video length, audience location. 2024 CPM rates included.">
+    <meta name="keywords" content="YouTube ad revenue calculator, how much do YouTubers make, YouTube earnings per view, CPM calculator, YouTube money calculator, content creator earnings, YouTube revenue estimator">
+    <meta name="author" content="YouTube Revenue Calculator">
+    <meta property="og:title" content="YouTube Ad Revenue Calculator 2024 | How Much Do YouTubers Make">
+    <meta property="og:description" content="Calculate YouTube earnings. Free tool to estimate how much money YouTubers make per view based on 2024 CPM rates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raiderj77.github.io/youtube-ad-revenue-calculator/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YouTube Ad Revenue Calculator 2024">
+    <meta name="twitter:description" content="Free tool to calculate how much YouTubers make per view. 2024 CPM rates included.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "YouTube Ad Revenue Calculator",
+      "description": "Free tool to calculate how much money YouTubers make per view based on niche, video length, and CPM rates.",
+      "url": "https://raiderj77.github.io/youtube-ad-revenue-calculator/",
+      "applicationCategory": "CalculatorApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "YouTube Revenue Calculator"
+      },
+      "datePublished": "2024-02-21",
+      "dateModified": "2024-02-21"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
