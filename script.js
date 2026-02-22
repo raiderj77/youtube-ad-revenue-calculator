@@ -334,7 +334,53 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize tooltips
     initTooltips();
 
+    // Initialize FAQ accordion
+    initFAQAccordion();
+
     // Log initialization
     console.log('YouTube Ad Revenue Calculator initialized');
     console.log('CPM data loaded for', Object.keys(cpmData).length, 'niches');
 });
+
+// FAQ Accordion Functionality
+function initFAQAccordion() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const icon = this.querySelector('i');
+            
+            // Toggle active class on question
+            this.classList.toggle('active');
+            
+            // Toggle open class on answer
+            answer.classList.toggle('open');
+            
+            // Toggle icon rotation
+            if (answer.classList.contains('open')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+            
+            // Close other FAQ items (optional - remove if you want multiple open)
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== this) {
+                    otherQuestion.classList.remove('active');
+                    const otherAnswer = otherQuestion.nextElementSibling;
+                    const otherIcon = otherQuestion.querySelector('i');
+                    otherAnswer.classList.remove('open');
+                    otherIcon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    });
+    
+    // Open first FAQ by default
+    if (faqQuestions.length > 0) {
+        faqQuestions[0].click();
+    }
+    
+    console.log('FAQ accordion initialized with', faqQuestions.length, 'questions');
+}
